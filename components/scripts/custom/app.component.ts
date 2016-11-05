@@ -10,9 +10,10 @@ export class AppComponent{
     name = 'Khan';
     artists = ['Barot Bellingham', 'Jonathan Ferrar', 'Hillary Post'];
 
-    onClick(name){
+    onClick(name, element){
         //this.name = e.target.innerHTML;
         this.name = name;
+        element.style.backgroundColor="#FECE4E";
     }
 
     addArtist(myArtist){
