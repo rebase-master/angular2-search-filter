@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Exo+2:400,200,600,800);
 /* line 5, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -79,17 +80,28 @@ body {
 
 /* line 7, ../../../components/sass/_base.scss */
 h1, h2, h3, h4, h5, h6 {
-  font: 200 1.5em/1.5em "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #0f83a0;
+  font: 200 1.5em/1.3em "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #DF4848;
   font-weight: 600;
 }
 
-/* line 13, ../../../components/sass/_base.scss */
+/* line 12, ../../../components/sass/_base.scss */
+h1 {
+  font-size: 2em;
+}
+
+/* line 15, ../../../components/sass/_base.scss */
+h3 {
+  color: #888888;
+  font-size: 1em;
+}
+
+/* line 19, ../../../components/sass/_base.scss */
 strong {
   font-weight: 600;
 }
 
-/* line 17, ../../../components/sass/_base.scss */
+/* line 23, ../../../components/sass/_base.scss */
 p {
   font-weight: 200;
   padding-bottom: 10px;
@@ -105,17 +117,18 @@ p {
   padding: 20px 30px;
   z-index: 20;
 }
-/* line 10, ../../../components/sass/modules/search.scss */
+/* line 11, ../../../components/sass/modules/search.scss */
 .search h1 {
   margin-bottom: 10px;
 }
-/* line 14, ../../../components/sass/modules/search.scss */
+/* line 15, ../../../components/sass/modules/search.scss */
 .search label {
-  font-size: 1rem;
+  color: #555555;
+  font-size: 1.2rem;
   text-align: left;
   font-family: Lato, 'Helvetica Nueue', Helvetica, Arial, sans-serif;
 }
-/* line 20, ../../../components/sass/modules/search.scss */
+/* line 22, ../../../components/sass/modules/search.scss */
 .search input {
   width: 100%;
   display: inline-block;
@@ -144,20 +157,38 @@ p {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   z-index: 10;
 }
-/* line 15, ../../../components/sass/modules/artistlist.scss */
+/* line 2, ../../../components/sass/_mixins.scss */
+.artistlist:before, .artistlist:after {
+  content: "";
+  display: table;
+}
+/* line 7, ../../../components/sass/_mixins.scss */
+.artistlist:after {
+  clear: both;
+}
+/* line 17, ../../../components/sass/modules/artistlist.scss */
 .artistlist ul {
   margin: 0 auto;
   padding: 0;
   width: 100%;
 }
-/* line 21, ../../../components/sass/modules/artistlist.scss */
+/* line 23, ../../../components/sass/modules/artistlist.scss */
 .artistlist li {
   padding: 10px 10px 0 10px;
   border-bottom: 1px solid #999;
   opacity: .9;
   transition: all 0.3s ease-out;
 }
-/* line 27, ../../../components/sass/modules/artistlist.scss */
+/* line 2, ../../../components/sass/_mixins.scss */
+.artistlist li:before, .artistlist li:after {
+  content: "";
+  display: table;
+}
+/* line 7, ../../../components/sass/_mixins.scss */
+.artistlist li:after {
+  clear: both;
+}
+/* line 31, ../../../components/sass/modules/artistlist.scss */
 .artistlist li:hover {
   cursor: pointer;
   background: #FDF6E3;
@@ -167,7 +198,21 @@ p {
   -webkit-transform: scale(1.2, 1.2);
   transform: scale(1.2, 1.2);
 }
-/* line 40, ../../../components/sass/modules/artistlist.scss */
+/* line 42, ../../../components/sass/modules/artistlist.scss */
+.artistlist li img {
+  display: block;
+  float: left;
+  width: 60px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+/* line 52, ../../../components/sass/modules/artistlist.scss */
+.artistlist li h2 {
+  margin-top: 0;
+}
+/* line 56, ../../../components/sass/modules/artistlist.scss */
 .artistlist a {
   display: block;
   text-decoration: none;
@@ -183,28 +228,29 @@ p {
   margin-right: auto;
   margin-top: 20px;
   padding: 30px 40px;
-  position: relative;
   opacity: 1;
   border: 1px solid #e8e8e8;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 }
-/* line 15, ../../../components/sass/modules/artistinfo.scss */
+/* line 14, ../../../components/sass/modules/artistinfo.scss */
 .artistinfo h1 {
   font-size: 1.8em;
   margin-bottom: 3px;
 }
-/* line 20, ../../../components/sass/modules/artistinfo.scss */
+/* line 19, ../../../components/sass/modules/artistinfo.scss */
 .artistinfo h3 {
   font-size: 1.7rem;
   margin-bottom: 20px;
 }
-/* line 25, ../../../components/sass/modules/artistinfo.scss */
+/* line 24, ../../../components/sass/modules/artistinfo.scss */
 .artistinfo .longbio {
   font-size: 1.2rem;
   font-weight: 300;
 }
-/* line 30, ../../../components/sass/modules/artistinfo.scss */
+/* line 29, ../../../components/sass/modules/artistinfo.scss */
 .artistinfo img {
+  float: left;
   width: 40%;
+  margin-right: 20px;
   max-width: 130px;
 }

@@ -1,4 +1,6 @@
 .artistlist {
+  @include clearfix;
+
   position: absolute;
   width: 30%;
   min-width: 320px;
@@ -19,6 +21,8 @@
   }
 
   li {
+    @include clearfix;
+
     padding: 10px 10px 0 10px;
     border-bottom: 1px solid #999;
     opacity: .9;
@@ -35,6 +39,18 @@
       //-ms-transform: scale(1.2);
       //transform: scale(1.2);
     }
+    img {
+      display: block;
+      float: left;
+      width: 60px;
+      -webkit-border-radius: 12px;
+      border-radius: 12px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    h2 { margin-top: 0;}
+
   }
 
   a {
