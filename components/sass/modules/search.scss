@@ -1,0 +1,34 @@
+.search {
+  width: 100%;
+  min-width: 320px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px 30px;
+  z-index: 20;
+
+  h1{
+    margin-bottom: 10px;
+  }//h1
+
+  label {
+    font-size: 1rem;
+    text-align: left;
+    font-family: Lato, 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+  }
+
+    input {
+      width: 100%;
+      display: inline-block;
+      font-weight: 100;
+      padding: 15px;
+      margin: 5px 0;
+      font-size: 1.3rem;
+      color: #475B62;
+      border: 1px solid #C5C5C5;
+      border-radius: 4px;
+      outline: 0;
+  }
+
+}//search
+

@@ -1,0 +1,45 @@
+.artistlist {
+  position: absolute;
+  width: 30%;
+  min-width: 320px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-bottom: 30px;
+  background: white;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+  z-index: 10;
+
+  ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  }
+
+  li {
+    padding: 10px 10px 0 10px;
+    border-bottom: 1px solid #999;
+    opacity: .9;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      cursor: pointer;
+      background: #FDF6E3;
+      opacity: 1;
+
+      @include scale(1.2);
+      //-webkit-transform: scale(1.2);
+      //-moz-transform: scale(1.2);
+      //-ms-transform: scale(1.2);
+      //transform: scale(1.2);
+    }
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+  }
+
+}//artistlist
