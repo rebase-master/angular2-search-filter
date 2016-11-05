@@ -3,12 +3,11 @@
         <h1>Artist Directory</h1>
         <label *ngIf="name" [innerHTML]="'name: ' + name"></label>
         <input #newArtist
-            [value]="name"
-            (input)="name=$event.target.value"
+               [(ngModel)]="name"
             (keyup.enter) = "addArtist(newArtist.value); newArtist.value = ''"
             (blur) = "addArtist(newArtist.value); newArtist.value = ''"
         >
-            <button (click)="addArtist(newArtist.value)">Add</button>
+            <button class="btn" (click)="addArtist(newArtist.value)">Add</button>
     </div>
 </div>
 
