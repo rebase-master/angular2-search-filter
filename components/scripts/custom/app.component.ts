@@ -6,20 +6,18 @@ import {Component} from 'angular2/core';
 })
 
 export class AppComponent{
-    name: string;
-    artists: any;
 
-    constructor(){
-        this.name = 'Khan';
-        this.artists = [
-            {
-                name: 'Barot Bellingham',
-                school: 'Penn State'
-            },{
-                name: 'Hillary Post',
-                school: 'University of Illinois'
-            }
-        ]
+    name = 'Khan';
+    artists = ['Barot Bellingham', 'Jonathan Ferrar', 'Hillary Post'];
+
+    onClick(name){
+        //this.name = e.target.innerHTML;
+        this.name = name;
     }
+
+    addArtist(myArtist){
+        this.artists.push(myArtist);
+    }
+
 }
 
