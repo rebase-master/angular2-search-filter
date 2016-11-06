@@ -8,7 +8,10 @@
 
 <hr />
 <ul class="artistlist" *ngIf="query" >
-    <li #artistContainer (click)="showArtist(item); query='';" *ngFor="#item of artists">
+    <li #artistContainer (click)="showArtist(item); query='';"
+        *ngFor="#item of artists | find:query"
+
+    >
         <artist-item class="content" [artist]=item></artist-item>
     </li>
 </ul>
