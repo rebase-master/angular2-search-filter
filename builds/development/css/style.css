@@ -220,7 +220,7 @@ p {
 
 /* line 1, ../../../components/sass/modules/artistinfo.scss */
 .artistinfo {
-  position: absolute;
+  position: relative;
   background: white;
   width: 100%;
   max-width: 850px;
